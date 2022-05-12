@@ -5,6 +5,31 @@
     <title>Title</title>
 </head>
 <body>
+<script>
+    let n = 1;
+    let demSNT = 0;
+    while (demSNT <= 20) {
+        let i = 2;
+        let songuyento = 1;
+        if (n == 2) {
+            document.write(n + " là số nguyên tố<br>")
+            demSNT++;
+        } else if (n > 2) {
+            while (i < n) {
+                if (n % i == 0) {
+                    songuyento = 0;
+                    break;
+                }
+                i++;
+            }
+            if (songuyento === 1) {
+                document.write(n + " là số nguyên tố<br>")
+                demSNT++;
+            }
+        }
+        n++;
+    }
 
+</script>
 </body>
 </html>
